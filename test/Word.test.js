@@ -1,7 +1,23 @@
 const Word = require('../lib/Word');
 const Letter = require('../lib/Letter');
+const cFonts = require('cfonts');
 
 describe('Word class', () => {
+  afterAll(() => {
+    cFonts.say('Completed all tests!', {
+      font: 'tiny',
+      colors: ['system'],
+      background: 'transparent',
+      letterSpacing: 1,
+      lineHeight: 1,
+      space: true,
+      maxLength: '0',
+      gradient: false,
+      independentGradient: false,
+      transitionGradient: false,
+      env: 'node',
+    });
+  });
   it('Creates an array of Letter objects', () => {
     const word = new Word('hi');
 

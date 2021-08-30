@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cfonts": "^2.9.3",
     "chalk": "^2.4.1",
     "inquirer": "^6.2.1"
   },
